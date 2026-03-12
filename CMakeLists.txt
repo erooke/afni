@@ -81,6 +81,10 @@ elseif("${CMAKE_SYSTEM_NAME}" STREQUAL "Darwin")
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DREAD_WRITE_64 -DLINUX -DDARWIN")
 endif()
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-error=format-security")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-error=old-style-definition")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-error=unused-result")
+
 # ##### Docs, licence, and README
 set(DOC_DIR ${PROJECT_SOURCE_DIR}/doc)
 quotize("${DOC_DIR}/README/README.copyright" license)
