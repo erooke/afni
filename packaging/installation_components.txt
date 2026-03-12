@@ -264,7 +264,6 @@ Dimon, corebinaries
 Dimon1, corebinaries
 FIRdesign, corebinaries
 GLTsymtest, corebinaries
-Ifile, corebinaries
 RSFgen, corebinaries
 Vecwarp, corebinaries
 abut, corebinaries
